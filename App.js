@@ -1,9 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { emailregex } from './otherJs/helpers';
+import { passRegex } from './otherJs/helpers';
 var kati = [];
-var lastEl = [];
-
 export default class App extends React.Component {
     constructor(){
         super();
@@ -29,7 +28,7 @@ export default class App extends React.Component {
                 let unameFb = "*Username shouldn't be less than 5 characters.";
                 let passFb = "*Password should'nt be less than 5 characters.";
                 if(unameCount < 5){
-                    let feedback = unameFb; 
+                    let feedback = unameFb;
                     if(passCount < 5){
                         feedback = feedback + "\n" + passFb;
                         this.setState({
@@ -46,10 +45,17 @@ export default class App extends React.Component {
                         feedback: feedback
                     });
                 }else{
-                    this.setState({
-                        feedback: null
-                    })
-                    console.log(uname + " " + pass);
+                    if(pass.match(passRegex)){
+                        //firebase login code will go here
+                        console.log("Congrats!!! \n" + "Password: " + this.state.password);
+                        this.setState({
+                            feedback: null
+                        });
+                    }else{
+                        this.setState({
+                            feedback: "Your password must contain a letter and a number."
+                        });
+                    }  
                 }
             }else{
                 this.setState({
@@ -58,7 +64,8 @@ export default class App extends React.Component {
             }   
         }else{
             this.setState({
-                feedback: "Both username and password are required."
+                feedback: "Both username and password are required.",
+                password: null
             });
         }    
     }
@@ -68,19 +75,30 @@ export default class App extends React.Component {
         })
     }
     password = (data)=>{
-        let event = data;
-        let eventArr = event.split('');
-        lastEl = eventArr.pop();
-        if(lastEl !== '*'){
-            kati.push(lastEl);
-        }else if(lastEl === '*'){
-            kati.pop();
+        let ev = data.split('');
+        let dataCount = ev.length;
+        if(data !== null && data !== undefined && data !== ''){
+            let event = data;
+            let eventArr = event.split('');
+            let lastEl = eventArr.pop();
+            if(lastEl !== '*'){
+                kati.push(lastEl);
+                
+            }else if(lastEl === '*'){
+                kati.pop();
+            }
+            let hiddenPass = data==undefined?"": data.replace(/./gi, '*');  
+            this.setState({
+                password: (kati.join('')),
+                hpassval: hiddenPass            
+            });
+        }else{
+            kati.length = 0;
+            this.setState({
+                password: null,
+                hpassval: null
+            });
         }
-        let hiddenPass = data==undefined?"": data.replace(/./gi, '*');  
-        this.setState({
-            password: (kati.join('')),
-            hpassval: hiddenPass            
-        });
     }
     render() {
         return ( 

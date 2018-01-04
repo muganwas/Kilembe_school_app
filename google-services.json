@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "314219482824",
+    "firebase_url": "https://kilembe-school-app.firebaseio.com",
+    "project_id": "kilembe-school-app",
+    "storage_bucket": "kilembe-school-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314219482824:android:f1fc13a926c1204d",
+        "android_client_info": {
+          "package_name": "com.kilembe_school_app.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314219482824-v8t0dp2m4dntpf3t4bii4gla0kfq628q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kilembe_school_app.android",
+            "certificate_hash": "026a55937ad373595abd4bf4ad3f3fbdfe6d303b"
+          }
+        },
+        {
+          "client_id": "314219482824-mih29jacdd834shm7p95kj1f19tied8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1oxPm6dDeUKi4_81YOBPvdXSVRT1qYQw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314219482824-mih29jacdd834shm7p95kj1f19tied8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

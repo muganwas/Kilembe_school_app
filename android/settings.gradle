@@ -1,0 +1,3 @@
+rootProject.name = 'kilembe_school_app'
+
+include ':app'
