@@ -1,7 +1,4 @@
 {
-  "expo": {
-    "sdkVersion": "23.0.0"
-  },
   "name": "kilembe_school_app",
-  "displayName": "kilembe school app"
+  "displayName": "kilembe_school_app"
 }

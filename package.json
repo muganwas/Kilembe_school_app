@@ -18,6 +18,9 @@
   },
   "dependencies": {
     "react": "16.0.0",
-    "react-native": "0.50.3"
+    "react-devtools": "^3.0.0",
+    "react-native": "0.50.3",
+    "react-native-fbsdk": "0.7.0",
+    "react-native-google-signin": "0.12.0"
   }
 }

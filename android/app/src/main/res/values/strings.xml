@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">kilembe school app</string>
+    <string name="app_name">kilembe_school_app</string>
+    <string name="facebook_app_id">1135725929896951</string>
+    <string name="fb_login_protocol_scheme">fb1135725929896951</string>
 </resources>

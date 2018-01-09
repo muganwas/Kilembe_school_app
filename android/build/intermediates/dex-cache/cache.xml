@@ -3,30 +3,138 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_26326a093edf7f326623906746fb19532856f451.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_6e74b8dcc995a03e1ceccbb77aa86041bdf91800.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="d7cc5473b9cf4ea159a263cd477fb3ecb2987b96">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\android.arch.lifecycle-runtime-1.0.3_33af19aea3b2235000c3f91b366b55458de55265.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\customtabs\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="7ca71e38c643e51083ab3a07f3a056bfb066caec">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-customtabs-27.0.1_1e331df76e64330f9af5ed502d27118fbe947a6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="ed6560f31a6a40b5965f5879d8f2eab1f68def05">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-27.0.2_9f551c9772a7ee59f136b5822f2785de98d9d981.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
+        revision="27.0.2"
         sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
         <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_741d398f2cd8a42794d4e4b52f6e9fe97761f498.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\KING\.android\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\27.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_889a4e5607ab7af99ac86ccac4130a872a821dfe.jar" />
+        revision="27.0.2"
+        sha1="cbbd26dd2f6d46181b41a5f6f5e34889442a811b">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-27.0.1_ca6517eff1b15acd132b3b52470fe7ff75a35d2a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_f355498ed3120bcd349317dc258207b687cfaf75.jar" />
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_fe9846bdcd255161fc07d725dedb2f37df5d266b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_7d38f0edcb17d059da6fe700c714ec647a17716b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.3\7d7f60c4783872861222166f6164215f8951c7b1\common-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="7d7f60c4783872861222166f6164215f8951c7b1">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\common-1.0.3_816d1fe5c457424ce19b2e779999194f873b5ce5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="6746a3078625563a9eb381920f34e47ccd6bab87">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-11.8.0_2366e526abbf396b79d9dcd6f0251cc6529a7cc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\27.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="f8a80c9882b064f2943e10649a8d2b249f5bf176">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-27.0.1_e1504897aefb89a97f169b2a995c076c53229dd2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="caa03787689212c10939f308a55a8dc8a3333ed2">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-27.0.2_d69a8332018da45fc027fced3911a28b0409f80a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_fe9846bdcd255161fc07d725dedb2f37df5d266b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_7d38f0edcb17d059da6fe700c714ec647a17716b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -39,12 +147,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.8.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_4b318c45233c681eee5065ee2557a2eecda14bcf.jar" />
+        revision="27.0.2"
+        sha1="233d88c6f961d2a84758dfe27b7af61318190c7b">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-11.8.0_a38cca6d58e25c87caa14b989424b87ee47ac3b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\kilembe_school_app\react-native-fbsdk\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="f90c7e695e3c486f8a900c0e97eeeaa99a7e2d55">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\kilembe_school_app-react-native-fbsdk-unspecified_4fa30132134bf7b423c897927cd4cd90c0997242.jar" />
     </item>
     <item
         is-multidex="false"
@@ -60,18 +177,81 @@
         jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
+        revision="27.0.2"
         sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
         <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_aff222df94b6eb09a9d0584f47eab5fc172e495e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\libs\infer-annotations-4.0.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_45d1de0755248380bebfeda229d3627bb85aae39.jar" />
+        revision="27.0.2"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_20255c1c0c6822ab67534b38fc1e84a748a8d2a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="fe3916317a699975bcce0cba2d13fd2d8cf88922">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-27.0.2_9a610538b24dc24b79b1cb0fa40e9c285e01a05f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="ac2ce6027755bcf49442e70597bec0feb9064f68">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-27.0.2_5e4a98efc7d42eb2187875992b52710b06583a05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.8.0_41c01e87d83db8456fd1533c0437964547fa7448.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="618f75fe11febf263e3234c7da7dc892232a5608">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-27.0.2_ccfcfafdb364eb611ae0cf678c4df2e5afe01e1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\core-3.3.0_dcc29e14d36b7f2669008e7fd955d32e7985b01d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-messenger\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="2482bfd874e8b3927f4141105674ad392ff83698">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-messenger-4.29.0_1444d73d2eb880bab5f072d19904489546173d49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\common-1.0.0_437fcdbc587361e90647d4bf61b7b79d33ff5489.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,12 +273,156 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_cf8b5220f030502a93513d82ba49da25d2ea1652.jar" />
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_61cc16f07e83dc599812808b9b971d146a1b5aac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="b432e82447a3af781e927b9ba0bbb9fe2a496d4a">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-27.0.2_531206780d7b34a8c0fde69a47db459b5ac79e58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-api-phone\11.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="fe94ced585bffcf3c7f788a294cc54e6785544ac">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-api-phone-11.8.0_b6b30130335d02cc3864ff5112b2575fa4e6c587.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_4b318c45233c681eee5065ee2557a2eecda14bcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_45d1de0755248380bebfeda229d3627bb85aae39.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-login\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-login-4.29.0_9af07528e5003cb695a249aa174611c97e94de15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\kilembe_school_app\react-native-google-signin\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b717c2decdcab90411cd6aee7a001044eb424401">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\kilembe_school_app-react-native-google-signin-unspecified_09036b9986a4ad0cb1bcdd96c9eae3548471d284.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_f632b33bd5854f9e265b355c32e7af31776642e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_f85f5a6195361879f2a8cfe1ffe5ff7f33331223.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.50.3_8e150f21afa1a17cfbaa02358f33eb19464a4f96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\27.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="04cd0cacbedcb338f64665b88bad64d145325fbd">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-27.0.2_7db71980a3a952b553ed61ab67bf8837022e7c0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_61cc16f07e83dc599812808b9b971d146a1b5aac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_e72da7ab853a69b519675d412f6903cfdfbbedd6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="f95788f0e923006a2da51733d4cbd5c08aad299c">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-common-4.29.0_e18622a30abf9b29b46e3a951f24294fa3754a56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="53e8932b1ac8c7dfc35cfeda1f9efbc9822ceaf3">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.29.0_e9a53bd3119fa1941b28b7d60bfd226e5ae4d2d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_aff222df94b6eb09a9d0584f47eab5fc172e495e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.0.2\b9ef4342c934a1a8b107506273dc8061662a322\support-annotations-27.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\support-annotations-27.0.2_95866b6d9c3b4fd9c8ce91224acb4a6c73d754bc.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,30 +435,129 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.8.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_10f7a89d5065d76d518e5f7bd877e3ce3dfbf7d5.jar" />
+        revision="27.0.2"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.8.0_91d7ec0489fc4508e7cd2f04224833fc14f9c778.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_fe9846bdcd255161fc07d725dedb2f37df5d266b.jar" />
+        revision="27.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_1d190c80d14e4f49ee671815917894a633cd0212.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_9c19cf2556a4aff2bb78c67855f3b3cd56e1c120.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_7d38f0edcb17d059da6fe700c714ec647a17716b.jar" />
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_741d398f2cd8a42794d4e4b52f6e9fe97761f498.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_f355498ed3120bcd349317dc258207b687cfaf75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\kilembe_school_app\react-native-google-signin\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="b717c2decdcab90411cd6aee7a001044eb424401">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\kilembe_school_app-react-native-google-signin-unspecified_09036b9986a4ad0cb1bcdd96c9eae3548471d284.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-places\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="0d394688dd7030b83dea8eed3fa483410c24afe0">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-places-4.29.0_6da141543df2e29a55653227e63458458a80bc83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="dc98b63d89490102b0a38423e24dce190354795b">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-core-4.29.0_013edc51e8dc4651e565c0e2e000ec4ecea3cd2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_4b318c45233c681eee5065ee2557a2eecda14bcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-applinks\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="82ea5a937ab84229fbd2f3fc8cf2a72cbdf0ee0f">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-applinks-4.29.0_59d2943eb50dacacef26836179564bbac3779f61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-share\4.29.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="07ca601b039863d2c018dc7f625e845084d6d18b">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-share-4.29.0_d3485793a86575bd4204e3fd9cfea366e67f8041.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.50.3_8e150f21afa1a17cfbaa02358f33eb19464a4f96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_fc91cac9238c2f19243cca787e8330c4fd160948.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_45d1de0755248380bebfeda229d3627bb85aae39.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,30 +588,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\classes.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\11.8.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.50.3_8e150f21afa1a17cfbaa02358f33eb19464a4f96.jar" />
+        revision="27.0.2"
+        sha1="0a23c4daa97697118d96f2b09d1dbaf9ea943d8d">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-11.8.0_a5075691abb0f1d6fb4381cf1b542c6564c3a19a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\KING\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_61cc16f07e83dc599812808b9b971d146a1b5aac.jar" />
+        revision="27.0.2"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_f355498ed3120bcd349317dc258207b687cfaf75.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jar="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\27.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_f0319a85b78ed2e79053030852b914ba1e8df260.jar" />
+        revision="27.0.2"
+        sha1="925879273e627f34059466359ba6789cf61889e2">
+        <dex dex="C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-27.0.1_5006f67215da7826ca195e4e91e444a36d55db63.jar" />
     </item>
 
 </items>
