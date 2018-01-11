@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image } from 'react-native';
 import { emailregex, passRegex } from './otherJs/helpers';
 //import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
-import FBSDK, { LoginManager } from 'react-native-fbsdk';
+import FBSDK, { AccessToken, LoginManager, GraphRequest, GraphRequestManager, LoginButton } from 'react-native-fbsdk';
 var kati = [];
 export default class App extends React.Component {
     constructor(){
@@ -86,14 +86,41 @@ export default class App extends React.Component {
           console.log("Play services error", err.code, err.message);
         })
     }*/
+    
     _fbSignin = ()=> {
-        LoginManager.logInWithReadPermissions(['public_profile']).then(
+        LoginManager.logInWithReadPermissions(['email', 'public_profile', 'user_birthday']).then(
             function(result) {
               if (result.isCancelled) {
                 alert('Login cancelled');
-              } else {
-                alert('Login success with permissions: '
-                  +result.grantedPermissions.toString());
+                console.log('Login cancelled');
+              }else{
+                //get user access token
+                AccessToken.getCurrentAccessToken().then((data)=>{
+                    let aT = data.accessToken;  
+                    //console.log(aT.toString());
+                    const _responseInfoCallback= (error, result)=>{
+                        if (error) {
+                          alert('Error fetching data: ' + error.toString());
+                        } else {
+                            let udata = result.name.toString();
+                            let email = result.email.toString();
+                            console.log('Success fetching data: ' + udata + ' ' + email);                           
+                        } 
+                      }
+                    const infoRequest = new GraphRequest(
+                        '/me',
+                        {
+                            accessToken: aT,
+                            parameters: {
+                                fields: {
+                                    string: 'email,name,first_name,last_name'
+                                }
+                            }
+                        },
+                        _responseInfoCallback
+                    );
+                    new GraphRequestManager().addRequest(infoRequest).start();
+                });
               }
             },
             function(error) {
@@ -101,6 +128,7 @@ export default class App extends React.Component {
             }
         );
     }
+    
     username = (event)=>{
         this.setState({
             username: event
@@ -136,15 +164,18 @@ export default class App extends React.Component {
         return ( 
             <View style = { styles.container }>
                 <View style = { styles.login }>
-                    <Text style ={ styles.login_header }>Login</Text>
+                    <Text style ={ styles.login_header }>Kilembe Login</Text>
                     <Text style ={ styles.feedback }>{ this.state.feedback }</Text>
                     <View style = { styles.form }>
                         <TextInput style = { styles.textField } onChangeText={ this.username} placeholder="Email Address" id="username" />
                         <TextInput style = { styles.textField } value={ this.state.hpassval } onChangeText={ this.password } placeholder="Password" id="passord" />
-                        <Button onPress={ this.login } title="Sign in"/>
+                        <Button onPress={ this.login } title="Login"/>
                         <Text style={ styles.ran_info }>Or</Text>
-                        <TouchableOpacity onPress={ this._fbSignin }><Text>Login with Facebook</Text>
-                        </TouchableOpacity>
+                        <View style={ styles.facebook }>
+                            <TouchableOpacity onPress={ this._fbSignin }>
+                            <Image style={ styles.facebook_image } source={ require('./images/facebook/facebook7-text.png')} />
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>  
             </View>
@@ -165,7 +196,9 @@ const styles = StyleSheet.create({
         padding: 3
     },
     login: {
-        width: '70%'
+        width: 300,
+        elevation: 2,
+        padding: 5
     },
     login_header: {
         fontSize: 20,
@@ -183,6 +216,16 @@ const styles = StyleSheet.create({
         padding: 5,
         fontSize: 16,
         color: '#8e8d8a'
+    },
+    facebook: {
+        backgroundColor: '#DEE7E9',
+        height: 37,
+        paddingLeft: 20,
+        elevation: 3
+    },
+    facebook_image: {
+        width: '80%',
+        height: 35
     },
     googleButton: {
         width: '100%',
