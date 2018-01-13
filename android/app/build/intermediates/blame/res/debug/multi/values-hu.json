@@ -771,13 +771,13 @@
                     "endOffset": 4654
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
-                        "startOffset": 281,
+                        "startOffset": 283,
                         "endColumn": 108,
-                        "endOffset": 389
+                        "endOffset": 391
                     }
                 }
             },
@@ -790,13 +790,13 @@
                     "endOffset": 4870
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
-                        "startOffset": 390,
+                        "startOffset": 392,
                         "endColumn": 215,
-                        "endOffset": 605
+                        "endOffset": 607
                     }
                 }
             },
@@ -809,13 +809,13 @@
                     "endOffset": 5010
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
-                        "startOffset": 606,
+                        "startOffset": 608,
                         "endColumn": 135,
-                        "endOffset": 741
+                        "endOffset": 743
                     }
                 }
             },
@@ -828,13 +828,13 @@
                     "endOffset": 5121
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
-                        "startOffset": 742,
+                        "startOffset": 744,
                         "endColumn": 106,
-                        "endOffset": 848
+                        "endOffset": 850
                     }
                 }
             },
@@ -847,13 +847,13 @@
                     "endOffset": 5348
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
-                        "startOffset": 849,
+                        "startOffset": 851,
                         "endColumn": 226,
-                        "endOffset": 1075
+                        "endOffset": 1077
                     }
                 }
             },
@@ -866,13 +866,13 @@
                     "endOffset": 5488
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
-                        "startOffset": 1076,
+                        "startOffset": 1078,
                         "endColumn": 135,
-                        "endOffset": 1211
+                        "endOffset": 1213
                     }
                 }
             },
@@ -881,17 +881,17 @@
                     "startLine": 48,
                     "startColumn": 4,
                     "startOffset": 5493,
-                    "endColumn": 151,
-                    "endOffset": 5640
+                    "endColumn": 138,
+                    "endOffset": 5627
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
-                        "startOffset": 1212,
-                        "endColumn": 147,
-                        "endOffset": 1359
+                        "startOffset": 1214,
+                        "endColumn": 134,
+                        "endOffset": 1348
                     }
                 }
             },
@@ -899,18 +899,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 5645,
-                    "endColumn": 138,
-                    "endOffset": 5779
+                    "startOffset": 5632,
+                    "endColumn": 235,
+                    "endOffset": 5863
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 4,
                         "startColumn": 0,
-                        "startOffset": 1360,
-                        "endColumn": 134,
-                        "endOffset": 1494
+                        "startOffset": 285,
+                        "endColumn": 235,
+                        "endOffset": 520
                     }
                 }
             },
@@ -918,18 +918,18 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 5784,
-                    "endColumn": 235,
-                    "endOffset": 6015
+                    "startOffset": 5868,
+                    "endColumn": 228,
+                    "endOffset": 6092
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 11,
                         "startColumn": 0,
-                        "startOffset": 283,
-                        "endColumn": 235,
-                        "endOffset": 518
+                        "startOffset": 1349,
+                        "endColumn": 228,
+                        "endOffset": 1577
                     }
                 }
             },
@@ -937,18 +937,18 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 6020,
-                    "endColumn": 228,
-                    "endOffset": 6244
+                    "startOffset": 6097,
+                    "endColumn": 109,
+                    "endOffset": 6202
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
-                        "startOffset": 1495,
-                        "endColumn": 228,
-                        "endOffset": 1723
+                        "startOffset": 1578,
+                        "endColumn": 105,
+                        "endOffset": 1683
                     }
                 }
             },
@@ -956,18 +956,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 6249,
-                    "endColumn": 109,
-                    "endOffset": 6354
+                    "startOffset": 6207,
+                    "endColumn": 215,
+                    "endOffset": 6418
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
-                        "startOffset": 1724,
-                        "endColumn": 105,
-                        "endOffset": 1829
+                        "startOffset": 1684,
+                        "endColumn": 215,
+                        "endOffset": 1899
                     }
                 }
             },
@@ -975,18 +975,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 6359,
-                    "endColumn": 215,
-                    "endOffset": 6570
+                    "startOffset": 6423,
+                    "endColumn": 138,
+                    "endOffset": 6557
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
-                        "startOffset": 1830,
-                        "endColumn": 215,
-                        "endOffset": 2045
+                        "startOffset": 1900,
+                        "endColumn": 134,
+                        "endOffset": 2034
                     }
                 }
             },
@@ -994,18 +994,18 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 6575,
-                    "endColumn": 138,
-                    "endOffset": 6709
+                    "startOffset": 6562,
+                    "endColumn": 230,
+                    "endOffset": 6788
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
-                        "startOffset": 2046,
-                        "endColumn": 134,
-                        "endOffset": 2180
+                        "startOffset": 2035,
+                        "endColumn": 230,
+                        "endOffset": 2265
                     }
                 }
             },
@@ -1013,18 +1013,18 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 6714,
-                    "endColumn": 230,
-                    "endOffset": 6940
+                    "startOffset": 6793,
+                    "endColumn": 201,
+                    "endOffset": 6990
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
-                        "startOffset": 2181,
-                        "endColumn": 230,
-                        "endOffset": 2411
+                        "startOffset": 2266,
+                        "endColumn": 197,
+                        "endOffset": 2463
                     }
                 }
             },
@@ -1032,18 +1032,18 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 6945,
-                    "endColumn": 201,
-                    "endOffset": 7142
+                    "startOffset": 6995,
+                    "endColumn": 100,
+                    "endOffset": 7091
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
-                        "startOffset": 2412,
-                        "endColumn": 197,
-                        "endOffset": 2609
+                        "startOffset": 2464,
+                        "endColumn": 96,
+                        "endOffset": 2560
                     }
                 }
             },
@@ -1051,18 +1051,18 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 7147,
-                    "endColumn": 100,
-                    "endOffset": 7243
+                    "startOffset": 7096,
+                    "endColumn": 97,
+                    "endOffset": 7189
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
-                        "startOffset": 2610,
-                        "endColumn": 96,
-                        "endOffset": 2706
+                        "startOffset": 2561,
+                        "endColumn": 93,
+                        "endOffset": 2654
                     }
                 }
             },
@@ -1070,18 +1070,18 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 7248,
-                    "endColumn": 97,
-                    "endOffset": 7341
+                    "startOffset": 7194,
+                    "endColumn": 116,
+                    "endOffset": 7306
                 },
                 "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
+                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-hu\\values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
-                        "startOffset": 2707,
-                        "endColumn": 93,
-                        "endOffset": 2800
+                        "startOffset": 2655,
+                        "endColumn": 112,
+                        "endOffset": 2767
                     }
                 }
             },
@@ -1089,28 +1089,9 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 7346,
-                    "endColumn": 116,
-                    "endOffset": 7458
-                },
-                "from": {
-                    "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.8.0\\res\\values-hu\\values.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 0,
-                        "startOffset": 2801,
-                        "endColumn": 112,
-                        "endOffset": 2913
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 60,
-                    "startColumn": 4,
-                    "startOffset": 7463,
+                    "startOffset": 7311,
                     "endColumn": 82,
-                    "endOffset": 7541
+                    "endOffset": 7389
                 },
                 "from": {
                     "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\values-hu\\values-hu.xml",
@@ -1125,11 +1106,11 @@
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 7546,
+                    "startOffset": 7394,
                     "endColumn": 100,
-                    "endOffset": 7642
+                    "endOffset": 7490
                 },
                 "from": {
                     "file": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\27.0.2\\res\\values-hu\\values-hu.xml",

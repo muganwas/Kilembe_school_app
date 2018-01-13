@@ -1,19 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image } from 'react-native';
 import { emailregex, passRegex } from './otherJs/helpers';
-//import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
+import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 import FBSDK, { AccessToken, LoginManager, GraphRequest, GraphRequestManager, LoginButton } from 'react-native-fbsdk';
 var kati = [];
+var fname = '';
+var femail = '';
+var aT = '';
 export default class App extends React.Component {
     constructor(){
         super();
         this.state={
-            username: null,
             password: null,
             hpassval: null,
             passhidden: true,
             feedback: null
         }
+    }
+    componentWillUnmount(){
+        
     }
     login = ()=>{
         
@@ -70,41 +75,48 @@ export default class App extends React.Component {
             });
         }    
     }
-    /*_googleSignin = ()=>{
+    _googleSignin = ()=>{
         GoogleSignin.hasPlayServices({ autoResolve: true }).then(() => {
             // play services are available. can now configure library
             //alert('all good');
             GoogleSignin.configure({
                 scopes: [ 'https://www.googleapis.com/auth/userinfo.email' ],
                 shouldFetchBasicProfile: true,
-                webClientId: "365926543341-rjit9be1m995msb01jq822tfnhcfkebp.apps.googleusercontent.com",//from developers console
+                webClientId: "10397586510-u35p9ke6hdlc2aop52o2rijhu97n765j.apps.googleusercontent.com",//from developers console
                 //forceConsentPrompt: true, // [Android] if you want to show the authorization prompt at each login
-              }).then(() => {
+              }).then((data) => {
+                console.log(data);
                 alert('fuck u everyone');
+                
               });
         }).catch((err) => {
           console.log("Play services error", err.code, err.message);
         })
-    }*/
+    }
     
     _fbSignin = ()=> {
-        LoginManager.logInWithReadPermissions(['email', 'public_profile', 'user_birthday']).then(
-            function(result) {
+        LoginManager.logInWithReadPermissions(['email', 'public_profile', 'user_birthday']).then((result)=>{
               if (result.isCancelled) {
                 alert('Login cancelled');
                 console.log('Login cancelled');
               }else{
                 //get user access token
                 AccessToken.getCurrentAccessToken().then((data)=>{
-                    let aT = data.accessToken;  
+                    aT = data.accessToken;  
                     //console.log(aT.toString());
                     const _responseInfoCallback= (error, result)=>{
                         if (error) {
                           alert('Error fetching data: ' + error.toString());
                         } else {
-                            let udata = result.name.toString();
-                            let email = result.email.toString();
-                            console.log('Success fetching data: ' + udata + ' ' + email);                           
+                            fname = result.name.toString();
+                            femail = result.email.toString();
+                            console.log('Success fetching data: ' + fname + ' ' + femail);
+                            if(fname !== '' && fname !== null){
+                                this.setState({
+                                    username: fname,
+                                    email: femail
+                                })
+                            }                     
                         } 
                       }
                     const infoRequest = new GraphRequest(
@@ -176,6 +188,12 @@ export default class App extends React.Component {
                             <Image style={ styles.facebook_image } source={ require('./images/facebook/facebook7-text.png')} />
                             </TouchableOpacity>
                         </View>
+                        <GoogleSigninButton 
+                        style={ styles.googleButton }
+                        size={GoogleSigninButton.Size.Wide}
+                        color={GoogleSigninButton.Color.Dark}
+                        onPress={ this._googleSignin }
+                         /> 
                     </View>
                 </View>  
             </View>
@@ -229,6 +247,6 @@ const styles = StyleSheet.create({
     },
     googleButton: {
         width: '100%',
-        height: 48
+        height: 48,
     }
 });

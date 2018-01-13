@@ -560,7 +560,7 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="config_tooltipAnimTime">150</integer>
-    <integer name="google_play_services_version">11910000</integer>
+    <integer name="google_play_services_version">10084000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -643,7 +643,6 @@
     <string msgid="7153882981874058840" name="common_google_play_services_install_button">Install</string>
     <string name="common_google_play_services_install_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your device.</string>
     <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
-    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
     <string name="common_google_play_services_notification_ticker">Google Play services error</string>
     <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
     <string name="common_google_play_services_unsupported_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are not supported by your device.</string>
@@ -655,8 +654,15 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">10397586510-h1ldn1mju44ljno5qo5qumnrnq3402pb.apps.googleusercontent.com</string>
     <string name="facebook_app_id">1135725929896951</string>
     <string name="fb_login_protocol_scheme">fb1135725929896951</string>
+    <string name="firebase_database_url" translatable="false">https://kilembe-school-app-8c724.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">10397586510</string>
+    <string name="google_api_key" translatable="false">AIzaSyCP14z3WDoRo0fvrqiWX8N7JRZTXhhPrX0</string>
+    <string name="google_app_id" translatable="false">1:10397586510:android:173c225ecd9a711c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCP14z3WDoRo0fvrqiWX8N7JRZTXhhPrX0</string>
+    <string name="google_storage_bucket" translatable="false">kilembe-school-app-8c724.appspot.com</string>
     <string name="messenger_send_button_text">Send</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>

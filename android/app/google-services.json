@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "314219482824",
-    "firebase_url": "https://kilembe-school-app.firebaseio.com",
-    "project_id": "kilembe-school-app",
-    "storage_bucket": "kilembe-school-app.appspot.com"
+    "project_number": "10397586510",
+    "firebase_url": "https://kilembe-school-app-8c724.firebaseio.com",
+    "project_id": "kilembe-school-app-8c724",
+    "storage_bucket": "kilembe-school-app-8c724.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:314219482824:android:f1fc13a926c1204d",
+        "mobilesdk_app_id": "1:10397586510:android:173c225ecd9a711c",
         "android_client_info": {
-          "package_name": "com.kilembe_school_app.android"
+          "package_name": "com.kilembe_school_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "314219482824-hjsql1els68bcobvrqau3so4bocj1gks.apps.googleusercontent.com",
+          "client_id": "10397586510-u35p9ke6hdlc2aop52o2rijhu97n765j.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.kilembe_school_app.android",
+            "package_name": "com.kilembe_school_app",
             "certificate_hash": "568121ed8efef8644267e24ec50506a46c92e81f"
           }
         },
         {
-          "client_id": "314219482824-mih29jacdd834shm7p95kj1f19tied8b.apps.googleusercontent.com",
+          "client_id": "10397586510-h1ldn1mju44ljno5qo5qumnrnq3402pb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1oxPm6dDeUKi4_81YOBPvdXSVRT1qYQw"
+          "current_key": "AIzaSyCP14z3WDoRo0fvrqiWX8N7JRZTXhhPrX0"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "314219482824-mih29jacdd834shm7p95kj1f19tied8b.apps.googleusercontent.com",
+              "client_id": "10397586510-h1ldn1mju44ljno5qo5qumnrnq3402pb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
