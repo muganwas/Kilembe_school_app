@@ -82,12 +82,19 @@ export default class App extends React.Component {
             GoogleSignin.configure({
                 scopes: [ 'https://www.googleapis.com/auth/userinfo.email' ],
                 shouldFetchBasicProfile: true,
-                webClientId: "10397586510-u35p9ke6hdlc2aop52o2rijhu97n765j.apps.googleusercontent.com",//from developers console
+                webClientId: "10397586510-h1ldn1mju44ljno5qo5qumnrnq3402pb.apps.googleusercontent.com",//from developers console
                 //forceConsentPrompt: true, // [Android] if you want to show the authorization prompt at each login
               }).then((data) => {
-                console.log(data);
-                alert('fuck u everyone');
                 
+                GoogleSignin.signIn()
+                .then((user) => {
+                console.log(user);
+                //this.setState({user: user});
+                })
+                .catch((err) => {
+                console.log('WRONG SIGNIN', err);
+                })
+                .done();             
               });
         }).catch((err) => {
           console.log("Play services error", err.code, err.message);
