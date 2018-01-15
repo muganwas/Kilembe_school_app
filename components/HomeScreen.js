@@ -21,6 +21,6 @@ export default class HomeScreen extends React.Component {
                     </TouchableOpacity>
                 </View>  
             </View>
-        )
+        );
     }
 }

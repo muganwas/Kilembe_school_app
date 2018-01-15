@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, AsyncStorage } from 'react-native';
 import { emailregex, passRegex } from './otherJs/helpers';
 import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 import FBSDK, { AccessToken, LoginManager, GraphRequest, GraphRequestManager, LoginButton } from 'react-native-fbsdk';
@@ -19,11 +19,24 @@ export default class App extends React.Component {
             feedback: null
         }
     }
-    componentWillUnmount(){
-        
+    componentWillMount(){
+        AsyncStorage.getItem('@username').then((data)=>{
+            console.log('username: ', data);
+            if((data !== null && data !== undefined)){
+                this.setState({
+                    username: data,
+                });
+            }
+            AsyncStorage.getItem('@email').then((data1)=>{
+                if((data1 !== null && data1 !== undefined)){
+                    this.setState({
+                        email: data1,
+                    });
+                }
+            });
+        });
     }
     login = ()=>{
-        
         let uname = this.state.username;
         let pass = this.state.password;
         if( (uname !== null && uname !== null) && (pass !== null && pass !== undefined) ){
@@ -82,6 +95,9 @@ export default class App extends React.Component {
             username: null,
             email: null
         });
+        AsyncStorage.multiRemove(['@email', '@username'], ()=>{
+            console.log('User logged out!');
+        });
     }
     _googleSignin = ()=>{
         GoogleSignin.hasPlayServices({ autoResolve: true }).then(() => {
@@ -90,7 +106,7 @@ export default class App extends React.Component {
             GoogleSignin.configure({
                 scopes: [ 'https://www.googleapis.com/auth/userinfo.email' ],
                 shouldFetchBasicProfile: true,
-                webClientId: "10397586510-h1ldn1mju44ljno5qo5qumnrnq3402pb.apps.googleusercontent.com",//from developers console
+                webClientId: "576509237424-inui69nhpenpgea32mb45tto7vrse2d2.apps.googleusercontent.com",//from developers console
                 //forceConsentPrompt: true, // [Android] if you want to show the authorization prompt at each login
               }).then((data) => {
                 
@@ -100,6 +116,9 @@ export default class App extends React.Component {
                     this.setState({
                         username: user.name,
                         email: user.email
+                    });
+                    AsyncStorage.multiSet([['@username', user.name], ['@email', user.email]], ()=>{
+                        console.log('Username and email, set!');
                     });
                 })
                 .catch((err) => {
@@ -134,6 +153,9 @@ export default class App extends React.Component {
                                     username: fname,
                                     email: femail
                                 });
+                                AsyncStorage.multiSet([['@username', fname], ['@email', femail]], ()=>{
+                                    console.log('username and email, set!');
+                                });
                             }                     
                         } 
                       }
@@ -162,7 +184,7 @@ export default class App extends React.Component {
     username = (event)=>{
         this.setState({
             username: event
-        })
+        });
     }
     password = (data)=>{
         let ev = data.split('');
@@ -193,13 +215,13 @@ export default class App extends React.Component {
     render() {
         let username = this.state.username;
         let email = this.state.email;
-        if(username !== null && username !== ''){
+        if(username !== null && username !== '' && username !== undefined){
             return (
                 <View>
                     <HomeScreen logout={ this._logout } username={ this.state.username } email={ this.state.email } />
                 </View>
             );
-        }else{
+        }else if(username === null || username === '' || username === undefined) {
             return (
                 <View style = { styles.container }>
                     <View style = { styles.login }>
