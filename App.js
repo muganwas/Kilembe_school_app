@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image } fr
 import { emailregex, passRegex } from './otherJs/helpers';
 import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 import FBSDK, { AccessToken, LoginManager, GraphRequest, GraphRequestManager, LoginButton } from 'react-native-fbsdk';
+import HomeScreen from './components/HomeScreen';
+import styles from './components/styles'
 var kati = [];
 var fname = '';
 var femail = '';
@@ -75,6 +77,12 @@ export default class App extends React.Component {
             });
         }    
     }
+    _logout = ()=>{
+        this.setState({
+            username: null,
+            email: null
+        });
+    }
     _googleSignin = ()=>{
         GoogleSignin.hasPlayServices({ autoResolve: true }).then(() => {
             // play services are available. can now configure library
@@ -88,8 +96,11 @@ export default class App extends React.Component {
                 
                 GoogleSignin.signIn()
                 .then((user) => {
-                console.log(user);
-                //this.setState({user: user});
+                //console.log(user.name);
+                    this.setState({
+                        username: user.name,
+                        email: user.email
+                    });
                 })
                 .catch((err) => {
                 console.log('WRONG SIGNIN', err);
@@ -117,12 +128,12 @@ export default class App extends React.Component {
                         } else {
                             fname = result.name.toString();
                             femail = result.email.toString();
-                            console.log('Success fetching data: ' + fname + ' ' + femail);
+                            //console.log('Success fetching data: ' + fname + ' ' + femail);
                             if(fname !== '' && fname !== null){
                                 this.setState({
                                     username: fname,
                                     email: femail
-                                })
+                                });
                             }                     
                         } 
                       }
@@ -180,80 +191,40 @@ export default class App extends React.Component {
         }
     }
     render() {
-        return ( 
-            <View style = { styles.container }>
-                <View style = { styles.login }>
-                    <Text style ={ styles.login_header }>Kilembe Login</Text>
-                    <Text style ={ styles.feedback }>{ this.state.feedback }</Text>
-                    <View style = { styles.form }>
-                        <TextInput style = { styles.textField } onChangeText={ this.username} placeholder="Email Address" id="username" />
-                        <TextInput style = { styles.textField } value={ this.state.hpassval } onChangeText={ this.password } placeholder="Password" id="passord" />
-                        <Button onPress={ this.login } title="Login"/>
-                        <Text style={ styles.ran_info }>Or</Text>
-                        <View style={ styles.facebook }>
-                            <TouchableOpacity onPress={ this._fbSignin }>
-                            <Image style={ styles.facebook_image } source={ require('./images/facebook/facebook7-text.png')} />
-                            </TouchableOpacity>
+        let username = this.state.username;
+        let email = this.state.email;
+        if(username !== null && username !== ''){
+            return (
+                <View>
+                    <HomeScreen logout={ this._logout } username={ this.state.username } email={ this.state.email } />
+                </View>
+            );
+        }else{
+            return (
+                <View style = { styles.container }>
+                    <View style = { styles.login }>
+                        <Text style ={ styles.login_header }>Kilembe Login</Text>
+                        <Text style ={ styles.feedback }>{ this.state.feedback }</Text>
+                        <View style = { styles.form }>
+                            <TextInput style = { styles.textField } onChangeText={ this.username} placeholder="Email Address" id="username" />
+                            <TextInput style = { styles.textField } value={ this.state.hpassval } onChangeText={ this.password } placeholder="Password" id="passord" />
+                            <Button onPress={ this.login } title="Login"/>
+                            <Text style={ styles.ran_info }>Or</Text>
+                            <View style={ styles.facebook }>
+                                <TouchableOpacity onPress={ this._fbSignin }>
+                                <Image style={ styles.facebook_image } source={ require('./images/facebook/facebook7-text.png')} />
+                                </TouchableOpacity>
+                            </View>
+                            <GoogleSigninButton 
+                            style={ styles.googleButton }
+                            size={GoogleSigninButton.Size.Wide}
+                            color={GoogleSigninButton.Color.Dark}
+                            onPress={ this._googleSignin }
+                            /> 
                         </View>
-                        <GoogleSigninButton 
-                        style={ styles.googleButton }
-                        size={GoogleSigninButton.Size.Wide}
-                        color={GoogleSigninButton.Color.Dark}
-                        onPress={ this._googleSignin }
-                         /> 
-                    </View>
-                </View>  
-            </View>
-        );
+                    </View>  
+                </View>
+            );  
+        }
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    ran_info: {
-        textAlign: 'center',
-        fontSize: 17,
-        padding: 3
-    },
-    login: {
-        width: 300,
-        elevation: 2,
-        padding: 5
-    },
-    login_header: {
-        fontSize: 20,
-        marginBottom: 10
-    },
-    textField: {
-        padding: 5
-    },
-    form: {
-        borderWidth: 0.3,
-        borderColor: '#d9d9d9',
-        padding: 10
-    },
-    feedback: {
-        padding: 5,
-        fontSize: 16,
-        color: '#8e8d8a'
-    },
-    facebook: {
-        backgroundColor: '#DEE7E9',
-        height: 37,
-        paddingLeft: 20,
-        elevation: 3
-    },
-    facebook_image: {
-        width: '80%',
-        height: 35
-    },
-    googleButton: {
-        width: '100%',
-        height: 48,
-    }
-});
