@@ -8,6 +8,34 @@
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-share\\4.29.0\\res\\color\\com_facebook_send_button_text_color.xml"
     },
@@ -40,32 +68,16 @@
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_tint_spinner.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_tint_edittext.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_tint_switch_track.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
@@ -80,15 +92,7 @@
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     }
 ]

@@ -3,6 +3,9 @@ package com.kilembe_school_app;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import io.invertase.firebase.RNFirebasePackage;//firebase
+import io.invertase.firebase.auth.RNFirebaseAuthPackage;//firebase authentication
+import io.invertase.firebase.database.RNFirebaseDatabasePackage;//firebase database
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
@@ -34,6 +37,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
               new MainReactPackage(),
+            new RNFirebasePackage(),
+            new RNFirebaseAuthPackage(),
+            new RNFirebaseDatabasePackage(),
             //new FBSDKPackage(),
               new RNGoogleSigninPackage(),
               new FBSDKPackage(mCallbackManager)

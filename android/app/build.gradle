@@ -138,14 +138,23 @@ android {
 }
 
 dependencies {
+    compile(project(':react-native-firebase')) {
+        transitive = false
+    }
     compile (project(':react-native-google-signin')){
         //add this to prevent errors
         exclude group: "com.google.android.gms"
     }
     compile project(':react-native-fbsdk')
     compile fileTree(dir: "libs", include: ["*.jar"])
+    // Firebase dependencies
+    compile "com.google.firebase:firebase-auth:11.6.0"
+    compile "com.google.firebase:firebase-database:11.6.0"
+    compile "com.google.android.gms:play-services-base:11.6.0"
+    compile "com.google.firebase:firebase-core:11.6.0"
+    //end of firebase dependencies
     compile "com.android.support:appcompat-v7:27.0.2"
-    compile "com.google.android.gms:play-services-auth:10.0.1"
+    compile "com.google.android.gms:play-services-auth:11.6.0"
     compile "com.facebook.react:react-native:+"  // From node_modules
 }
 

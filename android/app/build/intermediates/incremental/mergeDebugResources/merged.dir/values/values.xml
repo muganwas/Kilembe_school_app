@@ -560,7 +560,7 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="config_tooltipAnimTime">150</integer>
-    <integer name="google_play_services_version">10084000</integer>
+    <integer name="google_play_services_version">11717000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -654,16 +654,17 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <string name="default_web_client_id" translatable="false">10397586510-h1ldn1mju44ljno5qo5qumnrnq3402pb.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">576509237424-inui69nhpenpgea32mb45tto7vrse2d2.apps.googleusercontent.com</string>
     <string name="facebook_app_id">1135725929896951</string>
     <string name="fb_login_protocol_scheme">fb1135725929896951</string>
-    <string name="firebase_database_url" translatable="false">https://kilembe-school-app-8c724.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">10397586510</string>
-    <string name="google_api_key" translatable="false">AIzaSyCP14z3WDoRo0fvrqiWX8N7JRZTXhhPrX0</string>
-    <string name="google_app_id" translatable="false">1:10397586510:android:173c225ecd9a711c</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCP14z3WDoRo0fvrqiWX8N7JRZTXhhPrX0</string>
-    <string name="google_storage_bucket" translatable="false">kilembe-school-app-8c724.appspot.com</string>
+    <string name="firebase_database_url" translatable="false">https://kilembe-school.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">576509237424</string>
+    <string name="google_api_key" translatable="false">AIzaSyC0r9XxYjBpdcV6DKKzHUuRgmEsAI_Qb1U</string>
+    <string name="google_app_id" translatable="false">1:576509237424:android:173c225ecd9a711c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC0r9XxYjBpdcV6DKKzHUuRgmEsAI_Qb1U</string>
+    <string name="google_storage_bucket" translatable="false">kilembe-school.appspot.com</string>
     <string name="messenger_send_button_text">Send</string>
+    <string name="project_id" translatable="false">kilembe-school</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

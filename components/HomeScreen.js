@@ -1,6 +1,8 @@
 import React from 'react';
 import{ TouchableOpacity, View, Text } from 'react-native';
-import styles from '../components/styles';
+import styles from '../otherJs/styles';
+import Header from './Header';
+import Courses from './Courses';
 
 export default class HomeScreen extends React.Component {
     constructor(props){
@@ -12,14 +14,12 @@ export default class HomeScreen extends React.Component {
     }
     render(){
         let username = this.props.username;
+        let logout = this.props.logout;
+        let email = this.props.email;
         return(
             <View style={ styles.home }>
-                <View style = { styles.header } >
-                    <Text style={ styles.homeText }>You're in { username }</Text>
-                    <TouchableOpacity style={ styles.logoutButton } onPress={ this.props.logout }>
-                        <Text style={ styles.logoutButtonText }>Logout</Text>
-                    </TouchableOpacity>
-                </View>  
+                <Header username={ username } logout = { logout } />
+                <Courses username={ username } email={ email } /> 
             </View>
         );
     }

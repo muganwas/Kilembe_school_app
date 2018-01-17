@@ -13,7 +13,11 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_logo.xml",
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\27.0.2\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
@@ -73,15 +81,19 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\27.0.2\\res\\drawable\\notification_tile_bg.xml"
     },
     {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_header_background.xml",
@@ -125,7 +137,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
@@ -149,7 +161,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
@@ -162,6 +174,10 @@
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\27.0.2\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
@@ -201,7 +217,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
@@ -214,6 +230,10 @@
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\27.0.2\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
@@ -233,11 +253,15 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
-        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+        "source": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",

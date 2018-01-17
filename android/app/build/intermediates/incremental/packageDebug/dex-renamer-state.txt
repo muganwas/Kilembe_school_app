@@ -1,4 +1,4 @@
-#Mon Jan 15 10:59:07 EAT 2018
+#Wed Jan 17 15:26:10 EAT 2018
 base.0=C\:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\xampp\\htdocs\\testingCode\\react_native\\Kilembe_school_app\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

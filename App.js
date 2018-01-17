@@ -4,8 +4,10 @@ import { emailregex, passRegex } from './otherJs/helpers';
 import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 import FBSDK, { AccessToken, LoginManager, GraphRequest, GraphRequestManager, LoginButton } from 'react-native-fbsdk';
 import HomeScreen from './components/HomeScreen';
-import styles from './components/styles'
-var kati = [];
+import Signup from './components/Signup';
+import Login from './components/Login';
+import Reset from './components/Reset';
+import styles from './otherJs/styles'
 var fname = '';
 var femail = '';
 var aT = '';
@@ -16,10 +18,22 @@ export default class App extends React.Component {
             password: null,
             hpassval: null,
             passhidden: true,
-            feedback: null
+            feedback: null,
+            signup: false,
+            reset: false
         }
     }
     componentWillMount(){
+        AsyncStorage.getItem('signup').then((data)=>{
+            this.setState({
+                signup: JSON.parse(data)
+            });
+        });
+        AsyncStorage.getItem('reset').then((data)=>{
+            this.setState({
+                reset: JSON.parse(data)
+            });
+        });
         AsyncStorage.getItem('@username').then((data)=>{
             console.log('username: ', data);
             if((data !== null && data !== undefined)){
@@ -36,7 +50,31 @@ export default class App extends React.Component {
             });
         });
     }
-    login = ()=>{
+    _showLogin=()=>{
+        AsyncStorage.setItem('signup', 'false');
+        AsyncStorage.setItem('reset', 'false');
+        this.setState({
+            signup: false,
+            reset: false
+        });
+    }
+    _showSignup=()=>{
+        AsyncStorage.setItem('signup', 'true');
+        AsyncStorage.setItem('reset', 'false');
+        this.setState({
+            signup: true,
+            reset: false
+        });
+    }
+    _showReset=()=>{
+        AsyncStorage.setItem('reset', 'true');
+        AsyncStorage.setItem('signup', 'false');
+        this.setState({
+            signup: false,
+            reset: true
+        });
+    }
+    _login = ()=>{
         let uname = this.state.username;
         let pass = this.state.password;
         if( (uname !== null && uname !== null) && (pass !== null && pass !== undefined) ){
@@ -98,6 +136,9 @@ export default class App extends React.Component {
         AsyncStorage.multiRemove(['@email', '@username'], ()=>{
             console.log('User logged out!');
         });
+    }
+    _resetPassword = ()=>{
+
     }
     _googleSignin = ()=>{
         GoogleSignin.hasPlayServices({ autoResolve: true }).then(() => {
@@ -180,41 +221,11 @@ export default class App extends React.Component {
             }
         );
     }
-    
-    username = (event)=>{
-        this.setState({
-            username: event
-        });
-    }
-    password = (data)=>{
-        let ev = data.split('');
-        let dataCount = ev.length;
-        if(data !== null && data !== undefined && data !== ''){
-            let event = data;
-            let eventArr = event.split('');
-            let lastEl = eventArr.pop();
-            if(lastEl !== '*'){
-                kati.push(lastEl);
-                
-            }else if(lastEl === '*'){
-                kati.pop();
-            }
-            let hiddenPass = data==undefined?"": data.replace(/./gi, '*');  
-            this.setState({
-                password: (kati.join('')),
-                hpassval: hiddenPass            
-            });
-        }else{
-            kati.length = 0;
-            this.setState({
-                password: null,
-                hpassval: null
-            });
-        }
-    }
     render() {
         let username = this.state.username;
         let email = this.state.email;
+        let signup = this.state.signup;
+        let reset = this.state.reset;
         if(username !== null && username !== '' && username !== undefined){
             return (
                 <View>
@@ -222,31 +233,31 @@ export default class App extends React.Component {
                 </View>
             );
         }else if(username === null || username === '' || username === undefined) {
-            return (
-                <View style = { styles.container }>
-                    <View style = { styles.login }>
-                        <Text style ={ styles.login_header }>Kilembe Login</Text>
-                        <Text style ={ styles.feedback }>{ this.state.feedback }</Text>
-                        <View style = { styles.form }>
-                            <TextInput style = { styles.textField } onChangeText={ this.username} placeholder="Email Address" id="username" />
-                            <TextInput style = { styles.textField } value={ this.state.hpassval } onChangeText={ this.password } placeholder="Password" id="passord" />
-                            <Button onPress={ this.login } title="Login"/>
-                            <Text style={ styles.ran_info }>Or</Text>
-                            <View style={ styles.facebook }>
-                                <TouchableOpacity onPress={ this._fbSignin }>
-                                <Image style={ styles.facebook_image } source={ require('./images/facebook/facebook7-text.png')} />
-                                </TouchableOpacity>
-                            </View>
-                            <GoogleSigninButton 
-                            style={ styles.googleButton }
-                            size={GoogleSigninButton.Size.Wide}
-                            color={GoogleSigninButton.Color.Dark}
-                            onPress={ this._googleSignin }
-                            /> 
+            if(signup === false && reset === false){
+                return (
+                    <View style = { styles.container }>
+                        <View style = { styles.login }>
+                            <Login username={ this.username } password={ this.password } showSignup={ this._showSignup } showReset={ this._showReset } login={ this._login} fbLogin={ this._fbSignin } googleLogin={ this._googleSignin }  />
+                        </View>  
+                    </View>
+                );
+            }else if(signup === true && reset === false){
+                return(
+                    <View style={ styles.container }>
+                        <View style={ styles.login }>
+                            <Signup reset={ this._showReset } login={ this._showLogin } />
                         </View>
-                    </View>  
-                </View>
-            );  
+                    </View>
+                );
+            }else if( reset === true && signup === false){
+                return(
+                    <View style={ styles.container }>
+                        <View style={ styles.login }>
+                            <Reset resetPass={ this._resetPassword } signup={ this._showSignup } login={ this._showLogin } />
+                        </View>
+                    </View>
+                )
+            }   
         }
     }
 }
