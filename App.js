@@ -7,10 +7,12 @@ import HomeScreen from './components/HomeScreen';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Reset from './components/Reset';
-import styles from './otherJs/styles'
+import styles from './otherJs/styles';
+import base from './otherJs/base';
 var fname = '';
 var femail = '';
 var aT = '';
+var kati = [];
 export default class App extends React.Component {
     constructor(){
         super();
@@ -24,58 +26,114 @@ export default class App extends React.Component {
         }
     }
     componentWillMount(){
-        AsyncStorage.getItem('signup').then((data)=>{
+        AsyncStorage.multiGet(['signup', 'reset', '@username', '@email']).then((data)=>{
+            //console.log(data);
+            let signup = JSON.parse(data[0][1]);
+            let reset = JSON.parse(data[1][1]);
+            let username = JSON.parse(data[2][1]);
+            let email = JSON.parse(data[3][1]);
             this.setState({
-                signup: JSON.parse(data)
-            });
-        });
-        AsyncStorage.getItem('reset').then((data)=>{
-            this.setState({
-                reset: JSON.parse(data)
-            });
-        });
-        AsyncStorage.getItem('@username').then((data)=>{
-            console.log('username: ', data);
-            if((data !== null && data !== undefined)){
-                this.setState({
-                    username: data,
-                });
-            }
-            AsyncStorage.getItem('@email').then((data1)=>{
-                if((data1 !== null && data1 !== undefined)){
-                    this.setState({
-                        email: data1,
-                    });
-                }
+                signup: signup,
+                reset: reset,
+                username: username,
+                email: email
             });
         });
     }
     _showLogin=()=>{
-        AsyncStorage.setItem('signup', 'false');
-        AsyncStorage.setItem('reset', 'false');
-        this.setState({
-            signup: false,
-            reset: false
+        AsyncStorage.multiSet([['signup', 'false'], ['reset', 'false']], ()=>{
+            this.setState({
+                signup: false,
+                reset: false,
+                feedback: null,
+                hpassval: null
+            });
         });
     }
     _showSignup=()=>{
-        AsyncStorage.setItem('signup', 'true');
-        AsyncStorage.setItem('reset', 'false');
-        this.setState({
-            signup: true,
-            reset: false
+        AsyncStorage.multiSet([['signup', 'true'], ['reset', 'false']], ()=>{
+            this.setState({
+                signup: true,
+                reset: false,
+                feedback: null,
+                hpassval: null
+            });
         });
     }
     _showReset=()=>{
-        AsyncStorage.setItem('reset', 'true');
-        AsyncStorage.setItem('signup', 'false');
-        this.setState({
-            signup: false,
-            reset: true
+        AsyncStorage.multiSet([['signup', 'false'], ['reset', 'true']], ()=>{
+            this.setState({
+                signup: false,
+                reset: true,
+                feedback: null
+            });
+        }); 
+    }
+    _logout = ()=>{
+        AsyncStorage.multiRemove(['@email', '@username'], ()=>{
+            console.log('User logged out!');
+            this.setState({
+                username: null,
+                email: null,
+                feedback: null
+            });
         });
     }
+    _resetPassword = ()=>{
+        let email = this.state.email;
+        if(email.match(emailregex)){
+            this.setState({
+                feedback: null
+            });
+            base.auth().sendPasswordResetEmail(email).then(()=>{
+                this.setState({
+                    feedback: 'A password reset link was sent to ' + email
+                });
+            }, (error)=>{
+                console.log(error.message);
+                this.setState({
+                    feedback: 'This email address could not be found in our database, please signup'
+                });
+            });
+        }else{
+            this.setState({
+                feedback: 'Please enter a valid email address.'
+            });
+        }  
+    }
+    username = (event)=>{
+        this.setState({
+            email: event
+        });
+    }
+    password = (data)=>{
+        let ev = data.split('');
+        let dataCount = ev.length;
+        if(data !== null && data !== undefined && data !== ''){
+            let event = data;
+            let eventArr = event.split('');
+            let lastEl = eventArr.pop();
+            if(lastEl !== '*'){
+                kati.push(lastEl);
+                
+            }else if(lastEl === '*'){
+                kati.pop();
+            }
+            let hiddenPass = data==undefined?"": data.replace(/./gi, '*');  
+            this.setState({
+                password: (kati.join('')),
+                hpassval: hiddenPass            
+            });
+        }else{
+            kati.length = 0;
+            this.setState({
+                password: null,
+                hpassval: null
+            });
+        }
+    }
     _login = ()=>{
-        let uname = this.state.username;
+        let uname = this.state.email;
         let pass = this.state.password;
         if( (uname !== null && uname !== null) && (pass !== null && pass !== undefined) ){
             if(uname.match(emailregex)){
@@ -107,12 +165,30 @@ export default class App extends React.Component {
                     if(pass.match(passRegex)){
                         //firebase login code will go here
                         console.log("Congrats!!! \n" + "Password: " + this.state.password);
-                        this.setState({
-                            feedback: null
+                        let email = this.state.email;
+                        let password = this.state.password;
+                        let Rname = email.split('@');
+                        let eDomain = Rname[1].split('.');
+                        let eProv = eDomain[0];
+                        let name = Rname[0];
+                        let userId = name + eProv;
+                        base.auth().signInWithEmailAndPassword(email, password).then((data)=>{
+                            AsyncStorage.multiSet([['@username', name], ['@email', email]], ()=>{
+                                this.setState({
+                                    feedback: null,
+                                    username: name,
+                                    password: null,
+                                    hpassval: null
+                                });
+                            });
+                        }).catch((error)=>{
+                            this.setState({
+                                feedback: error.message
+                            })
                         });
                     }else{
                         this.setState({
-                            feedback: "Your password must contain a letter and a number."
+                            feedback: "Your password must contain a letter and a number, and no special."
                         });
                     }  
                 }
@@ -127,19 +203,7 @@ export default class App extends React.Component {
                 password: null
             });
         }    
-    }
-    _logout = ()=>{
-        this.setState({
-            username: null,
-            email: null
-        });
-        AsyncStorage.multiRemove(['@email', '@username'], ()=>{
-            console.log('User logged out!');
-        });
-    }
-    _resetPassword = ()=>{
-
-    }
+    } 
     _googleSignin = ()=>{
         GoogleSignin.hasPlayServices({ autoResolve: true }).then(() => {
             // play services are available. can now configure library
@@ -171,7 +235,7 @@ export default class App extends React.Component {
           console.log("Play services error", err.code, err.message);
         })
     }
-    
+
     _fbSignin = ()=> {
         LoginManager.logInWithReadPermissions(['email', 'public_profile', 'user_birthday']).then((result)=>{
               if (result.isCancelled) {
@@ -190,12 +254,12 @@ export default class App extends React.Component {
                             femail = result.email.toString();
                             //console.log('Success fetching data: ' + fname + ' ' + femail);
                             if(fname !== '' && fname !== null){
-                                this.setState({
-                                    username: fname,
-                                    email: femail
-                                });
                                 AsyncStorage.multiSet([['@username', fname], ['@email', femail]], ()=>{
                                     console.log('username and email, set!');
+                                    this.setState({
+                                        username: fname,
+                                        email: femail
+                                    });
                                 });
                             }                     
                         } 
@@ -222,8 +286,10 @@ export default class App extends React.Component {
         );
     }
     render() {
+        let feedback = this.state.feedback;
         let username = this.state.username;
         let email = this.state.email;
+        let hpassval = this.state.hpassval;
         let signup = this.state.signup;
         let reset = this.state.reset;
         if(username !== null && username !== '' && username !== undefined){
@@ -237,7 +303,7 @@ export default class App extends React.Component {
                 return (
                     <View style = { styles.container }>
                         <View style = { styles.login }>
-                            <Login username={ this.username } password={ this.password } showSignup={ this._showSignup } showReset={ this._showReset } login={ this._login} fbLogin={ this._fbSignin } googleLogin={ this._googleSignin }  />
+                            <Login feedback={ feedback } username={ this.username } password={ this.password } hpassval={ hpassval } showSignup={ this._showSignup } showReset={ this._showReset } login={ this._login } fbLogin={ this._fbSignin } googleLogin={ this._googleSignin }  />
                         </View>  
                     </View>
                 );
@@ -253,7 +319,7 @@ export default class App extends React.Component {
                 return(
                     <View style={ styles.container }>
                         <View style={ styles.login }>
-                            <Reset resetPass={ this._resetPassword } signup={ this._showSignup } login={ this._showLogin } />
+                            <Reset feedback = { feedback } email={ this.username } resetPass={ this._resetPassword } signup={ this._showSignup } login={ this._showLogin } />
                         </View>
                     </View>
                 )

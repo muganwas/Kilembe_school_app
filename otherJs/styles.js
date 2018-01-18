@@ -74,7 +74,7 @@ module.exports = StyleSheet.create({
     sign_up:{
         color: '#5391f4',
         textAlign: 'center',
-        fontSize: 18,
+        fontSize: 15,
         padding: 3 
     },
     section: {
