@@ -48,23 +48,48 @@ module.exports = StyleSheet.create({
         width: '100%',
         height: 48,
     },
-    home: {
-        backgroundColor: '#190316'
-    },
-    homeText: {
-        flex: 6,
-        color: '#ffffff',
-        textAlign: 'left'
-    },
     header: {
         padding: 5,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        backgroundColor: '#000000'
     },
-    logoutButton: {
+    headerText: {
+        flex: 6,
+        color: '#ffffff',
+        textAlign: 'left',
+        padding: 5,
+    },
+    h1: {
+        color: '#000000',
+        fontSize: 16,
+        padding: 3
+    },
+    icon: {
+        width: 25,
+        height: 25,
+        padding: 5
+    },
+    home: {
+
+    },
+    homeText: {
+        
+    },
+    courses: {
+        padding: 5,
+        backgroundColor: '#332b1d'
+    },
+    course: {
+        padding: 5,
+        color: '#ffffff',
+        borderWidth: 1,
+        marginBottom: 3,
+        elevation: 2
+    },
+    Button: {
         flex: 1,
         marginLeft: 30,  
         height: 30,
-        backgroundColor: '#2d74e5',
         padding: 5
     },
     logoutButtonText: {
@@ -79,5 +104,17 @@ module.exports = StyleSheet.create({
     },
     section: {
 
+    },
+    video: {
+        padding: 5,
+        marginTop: 5,
+        width: '100%',
+        maxHeight: 300
+    },
+    vidContainer: {
+        padding: 5,
+        marginTop: 5,
+        width: '100%',
+        height: 300
     }
 });

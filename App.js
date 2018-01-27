@@ -26,17 +26,19 @@ export default class App extends React.Component {
         }
     }
     componentWillMount(){
-        AsyncStorage.multiGet(['signup', 'reset', '@username', '@email']).then((data)=>{
+        AsyncStorage.multiGet(['signup', 'reset', '@username', '@email', '@userId']).then((data)=>{
             //console.log(data);
             let signup = JSON.parse(data[0][1]);
             let reset = JSON.parse(data[1][1]);
-            let username = JSON.parse(data[2][1]);
-            let email = JSON.parse(data[3][1]);
+            let username = data[2][1];
+            let email = data[3][1];
+            let userId = data[4][1];
             this.setState({
                 signup: signup,
                 reset: reset,
                 username: username,
-                email: email
+                email: email,
+                userId: userId
             });
         });
     }
@@ -70,7 +72,7 @@ export default class App extends React.Component {
         }); 
     }
     _logout = ()=>{
-        AsyncStorage.multiRemove(['@email', '@username'], ()=>{
+        AsyncStorage.multiRemove(['@email', '@userId', '@username'], ()=>{
             console.log('User logged out!');
             this.setState({
                 username: null,
@@ -143,10 +145,10 @@ export default class App extends React.Component {
                 let unameCount = (uname.split('')).length;
                 let passCount = (pass.split('')).length;
                 let unameFb = "*Username shouldn't be less than 5 characters.";
-                let passFb = "*Password should'nt be less than 5 characters.";
+                let passFb = "*Password should'nt be less than 8 characters.";
                 if(unameCount < 5){
                     let feedback = unameFb;
-                    if(passCount < 5){
+                    if(passCount < 8){
                         feedback = feedback + "\n" + passFb;
                         this.setState({
                             feedback: feedback
@@ -156,7 +158,7 @@ export default class App extends React.Component {
                             feedback: feedback
                         });
                     }
-                }else if(passCount < 5){
+                }else if(passCount < 8){
                     feedback = passFb;
                     this.setState({
                         feedback: feedback
@@ -164,7 +166,6 @@ export default class App extends React.Component {
                 }else{
                     if(pass.match(passRegex)){
                         //firebase login code will go here
-                        console.log("Congrats!!! \n" + "Password: " + this.state.password);
                         let email = this.state.email;
                         let password = this.state.password;
                         let Rname = email.split('@');
@@ -173,13 +174,14 @@ export default class App extends React.Component {
                         let name = Rname[0];
                         let userId = name + eProv;
                         base.auth().signInWithEmailAndPassword(email, password).then((data)=>{
-                            AsyncStorage.multiSet([['@username', name], ['@email', email]], ()=>{
+                            AsyncStorage.multiSet([['@username', name], ['@userId', userId], ['@email', email]], ()=>{
                                 this.setState({
                                     feedback: null,
                                     username: name,
                                     password: null,
                                     hpassval: null
                                 });
+                                console.log("Congrats!!! \n" + "Password: " + this.state.password);
                             });
                         }).catch((error)=>{
                             this.setState({
@@ -303,7 +305,7 @@ export default class App extends React.Component {
                 return (
                     <View style = { styles.container }>
                         <View style = { styles.login }>
-                            <Login feedback={ feedback } username={ this.username } password={ this.password } hpassval={ hpassval } showSignup={ this._showSignup } showReset={ this._showReset } login={ this._login } fbLogin={ this._fbSignin } googleLogin={ this._googleSignin }  />
+                            <Login email={ email } feedback={ feedback } username={ this.username } password={ this.password } hpassval={ hpassval } showSignup={ this._showSignup } showReset={ this._showReset } login={ this._login } fbLogin={ this._fbSignin } googleLogin={ this._googleSignin }  />
                         </View>  
                     </View>
                 );
@@ -311,7 +313,7 @@ export default class App extends React.Component {
                 return(
                     <View style={ styles.container }>
                         <View style={ styles.login }>
-                            <Signup reset={ this._showReset } login={ this._showLogin } />
+                            <Signup email={ email } reset={ this._showReset } login={ this._showLogin } />
                         </View>
                     </View>
                 );
@@ -319,7 +321,7 @@ export default class App extends React.Component {
                 return(
                     <View style={ styles.container }>
                         <View style={ styles.login }>
-                            <Reset feedback = { feedback } email={ this.username } resetPass={ this._resetPassword } signup={ this._showSignup } login={ this._showLogin } />
+                            <Reset userEmail = { email } feedback = { feedback } email={ this.username } resetPass={ this._resetPassword } signup={ this._showSignup } login={ this._showLogin } />
                         </View>
                     </View>
                 )

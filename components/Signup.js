@@ -85,20 +85,26 @@ export default class Signup extends React.Component {
         if((email !== undefined && email !== null && email !== '' ) && (password !== undefined && password !== null && password !== '')){
             if(email.match(emailregex)){
                 if(password.match(passRegex)){
-                    if(password === conPassword){
-                        base.auth().createUserWithEmailAndPassword(email, password).then(() => {
-                            this.setState({
-                                feedback: "You Successfully Registered"
+                    if(password.length >= 8){
+                        if(password === conPassword){
+                            base.auth().createUserWithEmailAndPassword(email, password).then(() => {
+                                this.setState({
+                                    feedback: "You Successfully Registered"
+                                });
+                            }, (error) => {
+                                this.setState({
+                                    feedback: error.message,
+                                });
                             });
-                        }, (error) => {
+                        }else{
                             this.setState({
-                                feedback: error.message,
+                                feedback: 'Make sure your passwords match.'
                             });
-                        });
+                        }
                     }else{
                         this.setState({
-                            feedback: 'Make sure your passwords match.'
-                        })
+                            feedback: 'Password should not be less than 8 characters'
+                        });
                     }
                 }else{
                     this.setState({
@@ -120,12 +126,13 @@ export default class Signup extends React.Component {
     render(){
         let reset = this.props.reset;
         let login = this.props.login;
+        let email = this.props.email;
         return(
             <View>
                 <Text style ={ styles.login_header }>Kilembe Signup</Text>
                 <Text style ={ styles.feedback }>{ this.state.feedback }</Text>
                 <View style = { styles.form }>
-                    <TextInput style = { styles.textField } onChangeText={ this.username } placeholder="Email Address" id="username" />
+                    <TextInput style = { styles.textField } value = { email } onChangeText={ this.username } placeholder="Email Address" id="username" />
                     <TextInput style = { styles.textField } value={ this.state.hpassval } onChangeText={ this.password } placeholder="Password" id="passord" />
                     <TextInput style = { styles.textField } value={ this.state.hpassval1 } onChangeText={ this.password1 } placeholder="Confirm Password" id="passord1" />
                     <Button onPress={ this._signup } title="Sign up"/>

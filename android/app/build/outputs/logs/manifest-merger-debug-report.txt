@@ -42,16 +42,16 @@ MERGED from [com.android.support:multidex:1.0.1] C:\xampp\htdocs\testingCode\rea
 MERGED from [kilembe_school_app:react-native-firebase:unspecified] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\kilembe_school_app\react-native-firebase\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [kilembe_school_app:react-native-google-signin:unspecified] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\kilembe_school_app\react-native-google-signin\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [kilembe_school_app:react-native-fbsdk:unspecified] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\kilembe_school_app\react-native-fbsdk\unspecified\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.29.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-login\4.29.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-share\4.29.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.29.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:cardview-v7:27.0.1] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\27.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.1] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\customtabs\27.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-places:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-places\4.29.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-applinks\4.29.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-messenger\4.29.0\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.29.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.30.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-login\4.30.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-share\4.30.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.30.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\27.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\customtabs\27.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-places:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-places\4.30.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-applinks\4.30.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-messenger\4.30.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.30.0\AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\11.6.0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-license\11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-database:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\11.6.0\AndroidManifest.xml:3:5-43
@@ -76,8 +76,8 @@ MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\xampp\htdocs\t
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base-license\11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.6.0\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:27.0.1] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\27.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.1] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\27.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\27.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\27.0.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement-license\11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks-license\11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.facebook.react:react-native:0.50.3] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\AndroidManifest.xml:7:5-9:41
@@ -108,14 +108,14 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] C:\xampp\htdocs\testingCode\r
 application
 ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:17:5-52:19
 MERGED from [kilembe_school_app:react-native-fbsdk:unspecified] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\kilembe_school_app\react-native-fbsdk\unspecified\AndroidManifest.xml:28:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.29.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-login\4.29.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-share\4.29.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.29.0\AndroidManifest.xml:28:5-34:19
-MERGED from [com.facebook.android:facebook-places:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-places\4.29.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-applinks\4.29.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-messenger\4.29.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.29.0\AndroidManifest.xml:28:5-43:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.30.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-login\4.30.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-share\4.30.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.30.0\AndroidManifest.xml:28:5-34:19
+MERGED from [com.facebook.android:facebook-places:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-places\4.30.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-applinks\4.30.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-messenger\4.30.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.30.0\AndroidManifest.xml:28:5-43:19
 MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\11.6.0\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-license\11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection-license\11.6.0\AndroidManifest.xml:5:5-20
@@ -144,7 +144,7 @@ MERGED from [org.webkit:android-jsc:r174650] C:\xampp\htdocs\testingCode\react_n
 	android:label
 		ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:20:7-39
 	android:supportsRtl
-		ADDED from [com.facebook.android:facebook-android-sdk:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.29.0\AndroidManifest.xml:28:18-44
+		ADDED from [com.facebook.android:facebook-android-sdk:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.30.0\AndroidManifest.xml:28:18-44
 	android:allowBackup
 		ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:19:7-33
 	android:icon
@@ -185,13 +185,13 @@ ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\a
 		ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:34:20-65
 activity#com.facebook.FacebookActivity
 ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:37:9-40:48
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.29.0\AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.30.0\AndroidManifest.xml:29:9-32:66
 	android:label
 		ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:40:13-45
 	android:configChanges
 		ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:38:13-113
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.29.0\AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.30.0\AndroidManifest.xml:32:13-63
 	android:name
 		ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:37:19-63
 activity#com.facebook.CustomTabActivity
@@ -219,17 +219,17 @@ ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\a
 	android:scheme
 		ADDED from C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\src\main\AndroidManifest.xml:48:23-72
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.29.0\AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.30.0\AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.29.0\AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.30.0\AndroidManifest.xml:33:19-68
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.29.0\AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.30.0\AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.29.0\AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.30.0\AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.29.0\AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.30.0\AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.29.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.29.0\AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.30.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.30.0\AndroidManifest.xml:40:13-70
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\xampp\htdocs\testingCode\react_native\Kilembe_school_app\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:21:5-78

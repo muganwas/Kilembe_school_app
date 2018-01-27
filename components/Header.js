@@ -1,5 +1,5 @@
 import React from 'react';
-import{ TouchableOpacity, View, Text } from 'react-native';
+import{ TouchableOpacity, View, Text, Image } from 'react-native';
 import styles from '../otherJs/styles';
 
 export default class Header extends React.Component {
@@ -12,13 +12,16 @@ export default class Header extends React.Component {
     }
     render(){
         let username = this.props.username;
+        let goTo = this.props.goTo;
         return(
             <View style = { styles.header } >
-                <Text style={ styles.homeText }>You're in { username }</Text>
-                <TouchableOpacity style={ styles.logoutButton } onPress={ this.props.logout }>
-                    <Text style={ styles.logoutButtonText }>Logout</Text>
+                <TouchableOpacity style={ styles.Button } onPress={ goTo.bind(this, "home") }><Image style={ styles.icon } source={ require('../images/icons/home.png')}/></TouchableOpacity>
+                <TouchableOpacity style={ styles.Button } ><Image style={ styles.icon } source={ require('../images/icons/playlist.png')}/></TouchableOpacity>
+                <TouchableOpacity style={ styles.Button } ><Image style={ styles.icon } source={ require('../images/icons/settings.png')}/></TouchableOpacity>
+                <TouchableOpacity style={ styles.Button } onPress={ this.props.logout }>
+                <Image style={ styles.icon } source={ require('../images/icons/exit.png')}/>
                 </TouchableOpacity>
-            </View>  
+            </View>
         );
     }
 }

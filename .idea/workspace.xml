@@ -21,10 +21,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Courses.js" afterPath="$PROJECT_DIR$/components/Courses.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/HomeScreen.js" afterPath="$PROJECT_DIR$/components/HomeScreen.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Login.js" afterPath="$PROJECT_DIR$/components/Login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Reset.js" afterPath="$PROJECT_DIR$/components/Reset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/otherJs/base.js" afterPath="$PROJECT_DIR$/otherJs/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/otherJs/styles.js" afterPath="$PROJECT_DIR$/otherJs/styles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Signup.js" afterPath="$PROJECT_DIR$/components/Signup.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -119,6 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -133,9 +136,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>

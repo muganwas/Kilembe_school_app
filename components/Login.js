@@ -20,12 +20,13 @@ export default class Login extends React.Component {
         let googleLogin = this.props.googleLogin;
         let showSignup = this.props.showSignup;
         let showReset = this.props.showReset;
+        let email = this.props.email;
         return(
             <View>
                 <Text style ={ styles.login_header }>Kilembe Login</Text>
                 <Text style ={ styles.feedback }>{ feedback }</Text>
                 <View style = { styles.form }>
-                    <TextInput style = { styles.textField } onChangeText={ username } placeholder="Email Address" id="username" />
+                    <TextInput style = { styles.textField } value = { email } onChangeText={ username } placeholder="Email Address" id="username" />
                     <TextInput style = { styles.textField } value={ hpassval } onChangeText={ password } placeholder="Password" id="passord" />
                     <Button onPress={ login } title="Login"/>
                     <TouchableOpacity onPress={ showSignup }><Text style={ styles.sign_up }>Sign up</Text></TouchableOpacity>
