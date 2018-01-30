@@ -9,37 +9,63 @@ import firebase from 'react-native-firebase';
 export default class HomeScreen extends React.Component {
     constructor(props){
         super(props);
+        console.ignoredYellowBox = [
+            'Setting a timer'
+        ];
         this.state={
-
         }      
     }
     componentWillMount(){
-        AsyncStorage.multiGet(['@username', '@email', '@userId', '@loc']).then((data)=>{
-            let dname = data[0][1];
-            let email = data[1][1];
-            let uid = data[2][1];
+        AsyncStorage.multiGet(['@username', '@email', '@userId', '@loc', '@currentVid']).then((data)=>{
+            let userId = data[2][1];
+            //console.log(uid);
             let loc = data[3][1]===null || undefined?"home":data[3][1];
-            let rootRef = firebase.database().ref("/users/" + uid);
-            rootRef.once('value').then((snapshot)=>{
-                var username = snapshot.val().uid || 'Anonymous';                
-                console.log(username);
-              });
-            this.setState({
-                dname: dname,
-                email: email,
-                uid: uid,
-                loc: loc
+            let currentVid = data[4][1];
+            let rootRef = firebase.database().ref("/users/" + userId);
+            rootRef.once('value').then((snapshot)=>{   
+                let dname = snapshot.val().dname;
+                let email = snapshot.val().email;
+                this.setState({
+                    dname: dname,
+                    email: email,
+                    uid: userId,
+                    currentVid: currentVid,
+                    loc: loc
+                });
+                
             });
         });
     }
     goTo = (loc)=> {
-        this.setState({
-            loc: loc,
-            currentVid: null,
-            courseTitle: null
-        });
+        if(loc === 'vid'){
+            AsyncStorage.setItem('@loc', loc).then(()=>{
+                AsyncStorage.multiGet(['@currentVid', '@courseTitle']).then((data)=>{
+                    let currentVid = data[0][1];
+                    let courseTitle = data[1][1];
+                    this.setState({
+                        loc: loc,
+                        currentVid: currentVid,
+                        courseTitle: courseTitle
+                    });
+                });
+            });
+        }else{
+            AsyncStorage.setItem('@loc', loc).then(()=>{
+                AsyncStorage.multiRemove(['@currentVid', '@courseTitle'], (error)=>{
+                    if(error){
+                        console.log(error.message);
+                    }
+                });
+                this.setState({
+                    loc: loc,
+                    currentVid: null,
+                    courseTitle: null
+                });
+            });
+        }
     }
     getUrl=(info, loc, course)=>{
+        AsyncStorage.multiSet([['@loc', loc], ['@currentVid', info], ['@courseTitle', course]]);
         this.setState({
             currentVid: info,
             loc: loc,
@@ -53,14 +79,15 @@ export default class HomeScreen extends React.Component {
         let url = this.state.currentVid;
         let loc = this.state.loc;
         let courseTitle = this.state.courseTitle;
-        if( (url === undefined || url === null) && loc === "home"){
+        if(loc === "home"){
             return(
                 <View style={ styles.home }>
                     <Header goTo = { this.goTo } username={ username } logout = { logout } />
                     <Courses vidUrl={ this.getUrl } username={ username } email={ email } />
+                    <Text>Leave us a comment</Text>
                 </View>
             );
-        }else if(url !== undefined && loc === "vid"){
+        }else if(loc === "vid"){
             return(    
                 <View>
                     <Header goTo = {  this.goTo } username={ username } logout = { logout } />
@@ -70,6 +97,7 @@ export default class HomeScreen extends React.Component {
         }else{
             return(
                 <View>
+                    <Header goTo = {  this.goTo } username={ username } logout = { logout } />
                 </View>
             )
         }

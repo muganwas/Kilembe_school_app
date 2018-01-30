@@ -116,5 +116,30 @@ module.exports = StyleSheet.create({
         marginTop: 5,
         width: '100%',
         height: 300
+    },
+    playlist: {
+        backgroundColor: '#000000',
+        marginBottom: 1
+    },
+    playlistHead: {
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        backgroundColor: '#f4c8cc',
+        borderWidth: 1,
+        borderColor: '#f9b6bc'
+    },
+    playlistInfo: {
+        flexDirection: 'row',
+        padding: 5,
+        color: '#c90215',
+        elevation: 2
+    },
+    playlistItem: {
+        padding: 3
+    },
+    playlistText: {
+        color: '#ffffff',
+        fontWeight: 'bold',
+        padding: 1
     }
 });

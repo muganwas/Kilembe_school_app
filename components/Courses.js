@@ -1,23 +1,21 @@
 import React from 'react';
-import{ TouchableOpacity, View, Text } from 'react-native';
+import{ TouchableOpacity, View, Text, AsyncStorage } from 'react-native';
 import styles from '../otherJs/styles';
 import firebase from 'react-native-firebase';
 
 export default class Courses extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
+        console.ignoredYellowBox = [
+            'Setting a timer'
+        ];
         let username = this.props.username;
         this.state= {
             username: username
         }
     }
-    loadVideo = (vid, loc, course)=>{
-        (this.props.vidUrl)(vid, loc, course);//I didn't think this would work! the first brackets represent the function and the second one the params
-        this.setState({
-            currentVid: vid,
-            loc: loc,
-            CourseTitle: course
-        });
+    loadVideo = (vid, loc, course)=>{  
+        (this.props.vidUrl)(vid, loc, course);//I didn't think this would work! the first brackets represent the function and the second one the params      
     }
     componentWillMount(){
         let rootRef = firebase.database().ref("/courses");

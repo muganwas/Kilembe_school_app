@@ -8,7 +8,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import Reset from './components/Reset';
 import styles from './otherJs/styles';
-import base from './otherJs/base';
+import firebase from 'react-native-firebase';
 var fname = '';
 var femail = '';
 var aT = '';
@@ -16,6 +16,9 @@ var kati = [];
 export default class App extends React.Component {
     constructor(){
         super();
+        console.ignoredYellowBox = [
+            'Setting a timer'
+        ];
         this.state={
             password: null,
             hpassval: null,
@@ -87,14 +90,14 @@ export default class App extends React.Component {
             this.setState({
                 feedback: null
             });
-            base.auth().sendPasswordResetEmail(email).then(()=>{
+            firebase.auth().sendPasswordResetEmail(email).then(()=>{
                 this.setState({
                     feedback: 'A password reset link was sent to ' + email
                 });
             }, (error)=>{
                 console.log(error.message);
                 this.setState({
-                    feedback: 'This email address could not be found in our database, please signup'
+                    feedback: 'This email address could not be found in our datafirebase, please signup'
                 });
             });
         }else{
@@ -165,15 +168,15 @@ export default class App extends React.Component {
                     });
                 }else{
                     if(pass.match(passRegex)){
-                        //firebase login code will go here
+                        //firefirebase login code will go here
                         let email = this.state.email;
                         let password = this.state.password;
                         let Rname = email.split('@');
                         let eDomain = Rname[1].split('.');
                         let eProv = eDomain[0];
                         let name = Rname[0];
-                        let userId = name + eProv;
-                        base.auth().signInWithEmailAndPassword(email, password).then((data)=>{
+                        let userId = name;
+                        firebase.auth().signInWithEmailAndPassword(email, password).then((data)=>{
                             AsyncStorage.multiSet([['@username', name], ['@userId', userId], ['@email', email]], ()=>{
                                 this.setState({
                                     feedback: null,
@@ -221,11 +224,18 @@ export default class App extends React.Component {
                 .then((user) => {
                 //console.log(user.name);
                     this.setState({
+                        genData: user,
                         username: user.name,
                         email: user.email
                     });
-                    AsyncStorage.multiSet([['@username', user.name], ['@email', user.email]], ()=>{
-                        console.log('Username and email, set!');
+                    AsyncStorage.multiSet([['@username', user.name], ['@userId', user.name], ['@email', user.email]], ()=>{
+                        this.setState({
+                            feedback: null,
+                            username: user.name,
+                            password: null,
+                            hpassval: null
+                        });
+                        console.log("Congrats!!! \n" + "Password: " + this.state.password);
                     });
                 })
                 .catch((err) => {
@@ -256,7 +266,7 @@ export default class App extends React.Component {
                             femail = result.email.toString();
                             //console.log('Success fetching data: ' + fname + ' ' + femail);
                             if(fname !== '' && fname !== null){
-                                AsyncStorage.multiSet([['@username', fname], ['@email', femail]], ()=>{
+                                AsyncStorage.multiSet([['@username', fname], ['@userId', fname], ['@email', femail]], ()=>{
                                     console.log('username and email, set!');
                                     this.setState({
                                         username: fname,
