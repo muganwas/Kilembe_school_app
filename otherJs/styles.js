@@ -31,8 +31,8 @@ module.exports = StyleSheet.create({
     },
     feedback: {
         padding: 5,
-        fontSize: 16,
-        color: '#8e8d8a'
+        fontSize: 14,
+        color: '#026d3b'
     },
     facebook: {
         backgroundColor: '#DEE7E9',
@@ -141,5 +141,11 @@ module.exports = StyleSheet.create({
         color: '#ffffff',
         fontWeight: 'bold',
         padding: 1
+    },
+    commentContainer: {
+        padding: 5,
+    },
+    commentBox: {
+        elevation: 5
     }
 });
