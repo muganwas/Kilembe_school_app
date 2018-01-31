@@ -4,6 +4,7 @@ import styles from '../otherJs/styles';
 import Header from './Header';
 import Courses from './Courses';
 import Video from './Video';
+import Profile from './Profile';
 import Feedback from './Feedback';
 import firebase from 'react-native-firebase';
 
@@ -95,6 +96,13 @@ export default class HomeScreen extends React.Component {
                     <Video courseTitle={ courseTitle } url={ url } />
                 </View>
             );
+        }else if(loc === "profile"){
+            return(
+                <View>
+                    <Header goTo = {  this.goTo } username={ username } logout = { logout } />
+                    <Profile username={ username } />
+                </View>
+            )
         }else{
             return(
                 <View>
