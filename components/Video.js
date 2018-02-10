@@ -66,6 +66,7 @@ export default class Video extends React.Component{
         let playlist = {...this.state.playlist};
         delete playlist[key];
         AsyncStorage.getItem('@userId').then((data)=>{
+            console.log("user ",data)
             let rootRef = firebase.database().ref("/users/" + data);
             rootRef.update({
                 playlist:playlist
@@ -100,7 +101,7 @@ export default class Video extends React.Component{
         }else if(playlistLen>=1){
             let vidArr = Object.values(playlist);
             let vidArrLen = vidArr.length;
-            console.log(vidArrLen);
+            //console.log(vidArrLen);
             let count = 0;
             let pLUrl = vidArr[0] + "?enablejsapi=1&playlist=";
             for(count; count<vidArrLen; count++){

@@ -9,6 +9,7 @@ import Login from './components/Login';
 import Reset from './components/Reset';
 import styles from './otherJs/styles';
 import firebase from 'react-native-firebase';
+import FireBase from 'react-native-firebase';
 var fname = '';
 var femail = '';
 var aT = '';
@@ -19,11 +20,12 @@ export default class App extends React.Component {
         console.ignoredYellowBox = [
             'Setting a timer'
         ];
+        AsyncStorage.multiSet([['signup', 'false'], ['reset', 'false']]);
         this.state={
-            password: null,
-            hpassval: null,
+            password: undefined,
+            hpassval: undefined,
             passhidden: true,
-            feedback: null,
+            feedback: undefined,
             signup: false,
             reset: false
         }
@@ -50,8 +52,8 @@ export default class App extends React.Component {
             this.setState({
                 signup: false,
                 reset: false,
-                feedback: null,
-                hpassval: null
+                feedback: undefined,
+                hpassval: undefined
             });
         });
     }
@@ -60,8 +62,8 @@ export default class App extends React.Component {
             this.setState({
                 signup: true,
                 reset: false,
-                feedback: null,
-                hpassval: null
+                feedback: undefined,
+                hpassval: undefined
             });
         });
     }
@@ -70,17 +72,19 @@ export default class App extends React.Component {
             this.setState({
                 signup: false,
                 reset: true,
-                feedback: null
+                feedback: undefined
             });
         }); 
     }
     _logout = ()=>{
-        AsyncStorage.multiRemove(['@email', '@userId', '@username'], ()=>{
-            console.log('User logged out!');
-            this.setState({
-                username: null,
-                email: null,
-                feedback: null
+        firebase.auth().signOut().then(()=>{
+            AsyncStorage.multiRemove(['@email', '@userId', '@username'], ()=>{
+                console.log('User logged out!');
+                this.setState({
+                    username: null,
+                    email: null,
+                    feedback: null
+                });
             });
         });
     }
@@ -88,7 +92,7 @@ export default class App extends React.Component {
         let email = this.state.email;
         if(email.match(emailregex)){
             this.setState({
-                feedback: null
+                feedback: undefined
             });
             firebase.auth().sendPasswordResetEmail(email).then(()=>{
                 this.setState({
@@ -132,18 +136,18 @@ export default class App extends React.Component {
         }else{
             kati.length = 0;
             this.setState({
-                password: null,
-                hpassval: null
+                password: undefined,
+                hpassval: undefined
             });
         }
     }
     _login = ()=>{
         let uname = this.state.email;
         let pass = this.state.password;
-        if( (uname !== null && uname !== null) && (pass !== null && pass !== undefined) ){
+        if( (uname !== null && uname !== undefined) && (pass !== null && pass !== undefined) ){
             if(uname.match(emailregex)){
                 this.setState({
-                    feedback:null
+                    feedback:undefined
                 })
                 let unameCount = (uname.split('')).length;
                 let passCount = (pass.split('')).length;
@@ -169,20 +173,24 @@ export default class App extends React.Component {
                 }else{
                     if(pass.match(passRegex)){
                         //firefirebase login code will go here
-                        let email = this.state.email;
+                        let Lemail = this.state.email;
                         let password = this.state.password;
-                        let Rname = email.split('@');
-                        let eDomain = Rname[1].split('.');
-                        let eProv = eDomain[0];
-                        let name = Rname[0];
-                        let userId = name;
-                        firebase.auth().signInWithEmailAndPassword(email, password).then((data)=>{
-                            AsyncStorage.multiSet([['@username', name], ['@userId', userId], ['@email', email]], ()=>{
+                        firebase.auth().signInWithEmailAndPassword(Lemail, password).then((user)=>{
+                            let currUser = firebase.auth().currentUser;
+                            let uid = currUser.uid;
+                            let email = currUser.email;
+                            let Rname = email.split('@');
+                            let eDomain = Rname[1].split('.');
+                            let eProv = eDomain[0];
+                            let name = Rname[0];
+                            AsyncStorage.multiSet([['@username', name], ['@userId', uid], ['@email', email], ['@id', uid]], ()=>{
                                 this.setState({
-                                    feedback: null,
+                                    uid: uid,
+                                    feedback: undefined,
                                     username: name,
-                                    password: null,
-                                    hpassval: null
+                                    email: email,
+                                    password: undefined,
+                                    hpassval: undefined
                                 });
                                 console.log("Congrats!!! \n" + "Password: " + this.state.password);
                             });
@@ -205,7 +213,7 @@ export default class App extends React.Component {
         }else{
             this.setState({
                 feedback: "Both username and password are required.",
-                password: null
+                password: undefined
             });
         }    
     } 
@@ -219,29 +227,30 @@ export default class App extends React.Component {
                 webClientId: "576509237424-inui69nhpenpgea32mb45tto7vrse2d2.apps.googleusercontent.com",//from developers console
                 //forceConsentPrompt: true, // [Android] if you want to show the authorization prompt at each login
               }).then((data) => {
-                
-                GoogleSignin.signIn()
-                .then((user) => {
+                GoogleSignin.signIn().then((user) => {
                 //console.log(user.name);
-                    this.setState({
-                        genData: user,
-                        username: user.name,
-                        email: user.email
+                    let idToken = user.idToken;
+                    let accessToken = user.accessToken;
+                    const credential = firebase.auth.GoogleAuthProvider.credential(idToken, accessToken);
+                    firebase.auth().signInWithCredential(credential).then((data)=>{
+                        let currUser = firebase.auth().currentUser;
+                        let name = currUser.displayName;
+                        let uid = currUser.uid;
+                        let email = currUser.email;
+                        AsyncStorage.multiSet([['@username', name], ['@userId', uid], ['@email', email], ['@id', uid]], ()=>{
+                            this.setState({
+                                feedback: undefined,
+                                username: name,
+                                email: email,
+                                uid: uid,
+                                password: undefined,
+                                hpassval: undefined
+                            });
+                        });           
                     });
-                    AsyncStorage.multiSet([['@username', user.name], ['@userId', user.name], ['@email', user.email]], ()=>{
-                        this.setState({
-                            feedback: null,
-                            username: user.name,
-                            password: null,
-                            hpassval: null
-                        });
-                        console.log("Congrats!!! \n" + "Password: " + this.state.password);
-                    });
-                })
-                .catch((err) => {
-                console.log('WRONG SIGNIN', err);
-                })
-                .done();             
+                }).catch((err) => {
+                    console.log('WRONG SIGNIN', err);
+                }).done();             
               });
         }).catch((err) => {
           console.log("Play services error", err.code, err.message);
@@ -249,51 +258,36 @@ export default class App extends React.Component {
     }
 
     _fbSignin = ()=> {
+
         LoginManager.logInWithReadPermissions(['email', 'public_profile', 'user_birthday']).then((result)=>{
-              if (result.isCancelled) {
-                alert('Login cancelled');
-                console.log('Login cancelled');
-              }else{
+            if (result.isCancelled) {
+            alert('Login cancelled');
+            console.log('Login cancelled');
+            }else{
                 //get user access token
                 AccessToken.getCurrentAccessToken().then((data)=>{
                     aT = data.accessToken;  
-                    //console.log(aT.toString());
-                    const _responseInfoCallback= (error, result)=>{
-                        if (error) {
-                          alert('Error fetching data: ' + error.toString());
-                        } else {
-                            fname = result.name.toString();
-                            femail = result.email.toString();
-                            //console.log('Success fetching data: ' + fname + ' ' + femail);
-                            if(fname !== '' && fname !== null){
-                                AsyncStorage.multiSet([['@username', fname], ['@userId', fname], ['@email', femail]], ()=>{
-                                    console.log('username and email, set!');
-                                    this.setState({
-                                        username: fname,
-                                        email: femail
-                                    });
-                                });
-                            }                     
-                        } 
-                      }
-                    const infoRequest = new GraphRequest(
-                        '/me',
-                        {
-                            accessToken: aT,
-                            parameters: {
-                                fields: {
-                                    string: 'email,name,first_name,last_name'
-                                }
-                            }
-                        },
-                        _responseInfoCallback
-                    );
-                    new GraphRequestManager().addRequest(infoRequest).start();
+                    const credential = firebase.auth.FacebookAuthProvider.credential(aT);
+                    firebase.auth().signInWithCredential(credential).then((data)=>{
+                        let currUser = firebase.auth().currentUser;//the uid i wanted all along
+                        let name = currUser.displayName;
+                        let uid = currUser.uid;
+                        let email = currUser.email;
+                        AsyncStorage.multiSet([['@username', name], ['@userId', uid], ['@email', email], ['@id', uid]], ()=>{
+                            this.setState({
+                                feedback: undefined,
+                                username: name,
+                                email: email,
+                                uid: uid,
+                                password: undefined,
+                                hpassval: undefined
+                            });
+                        });           
+                    });
                 });
-              }
-            },
-            function(error) {
-              alert('Login fail with error: ' + error);
+            }
+        },function(error) {
+              console.log('Login fail with error: ' + error);
             }
         );
     }
@@ -307,7 +301,7 @@ export default class App extends React.Component {
         if(username !== null && username !== '' && username !== undefined){
             return (
                 <View>
-                    <HomeScreen logout={ this._logout } username={ this.state.username } email={ this.state.email } />
+                    <HomeScreen logout={ this._logout } username={ this.state.username } uid={ this.state.uid } email={ this.state.email } id={ this.state.id } />
                 </View>
             );
         }else if(username === null || username === '' || username === undefined) {

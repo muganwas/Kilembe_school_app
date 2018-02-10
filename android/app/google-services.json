@@ -15,7 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "576509237424-m2m609nrrlc8d0f1fr4i1d8jtugcqn76.apps.googleusercontent.com",
+          "client_id": "576509237424-29g4uk5se24fmrtgulgtci0bi1jehjdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kilembe_school_app",
+            "certificate_hash": "026a55937ad373595abd4bf4ad3f3fbdfe6d303b"
+          }
+        },
+        {
+          "client_id": "576509237424-e6cuu6p489u28grbqh4sbb4is3fn22jr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.kilembe_school_app",

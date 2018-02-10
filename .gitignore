@@ -24,6 +24,7 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
+android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin
 build/
 .idea
 .gradle

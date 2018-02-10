@@ -7,6 +7,8 @@ import Video from './Video';
 import Profile from './Profile';
 import Feedback from './Feedback';
 import firebase from 'react-native-firebase';
+import { firestore } from 'firebase';
+import FireBase from 'react-native-firebase';
 
 export default class HomeScreen extends React.Component {
     constructor(props){
@@ -18,23 +20,31 @@ export default class HomeScreen extends React.Component {
         }      
     }
     componentWillMount(){
-        AsyncStorage.multiGet(['@username', '@email', '@userId', '@loc', '@currentVid']).then((data)=>{
+        AsyncStorage.multiGet(['@username', '@email', '@userId', '@loc', '@currentVid', '@id']).then((data)=>{
             let userId = data[2][1];
             //console.log(uid);
             let loc = data[3][1]===null || undefined?"home":data[3][1];
             let currentVid = data[4][1];
-            let rootRef = firebase.database().ref("/users/" + userId);
-            rootRef.once('value').then((snapshot)=>{   
-                let dname = snapshot.val().dname;
-                let email = snapshot.val().email;
-                this.setState({
-                    dname: dname,
-                    email: email,
-                    uid: userId,
-                    currentVid: currentVid,
-                    loc: loc
-                });
-                
+            let id = data[5][1];
+            let rootRef = firebase.database().ref("/users" );
+            rootRef.once('value', (snapshot)=>{
+                if(snapshot.hasChild(userId)){
+                    let info = snapshot.child(userId);
+                    let dname = snapshot.val().dname;
+                    let email = snapshot.val().email;
+                    this.setState({
+                        dname: dname,
+                        email: email,
+                        uid: userId,
+                        id: id,
+                        currentVid: currentVid,
+                        loc: loc
+                    });
+                }else{
+                    this.setState({
+                        there: 'not'
+                    })
+                }
             });
         });
     }
@@ -81,6 +91,20 @@ export default class HomeScreen extends React.Component {
         let url = this.state.currentVid;
         let loc = this.state.loc;
         let courseTitle = this.state.courseTitle;
+        let userID = this.props.uid;
+        let rootRef = firebase.database().ref("/users/" );
+            rootRef.once('value', (snapshot)=>{
+                if(snapshot.hasChild(userID)){
+                    console.log('user already in db.');
+                }else{
+                    let userRef = rootRef.child(userID);
+                    userRef.set({
+                        email: email,
+                        dname: username,
+                        uid: userID
+                    });
+                }
+            });
         if(loc === "home"){
             return(
                 <View style={ styles.home }>
@@ -100,7 +124,7 @@ export default class HomeScreen extends React.Component {
             return(
                 <View>
                     <Header goTo = {  this.goTo } username={ username } logout = { logout } />
-                    <Profile username={ username } />
+                    <Profile username={ username } uid={ userID } />
                 </View>
             )
         }else{

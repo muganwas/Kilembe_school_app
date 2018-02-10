@@ -92,6 +92,11 @@ module.exports = StyleSheet.create({
         height: 30,
         padding: 5
     },
+    sButton: {
+        width: 35,
+        height: 35,
+        padding: 5,
+    },
     logoutButtonText: {
         color: '#ffffff',
         textAlign: 'center'
